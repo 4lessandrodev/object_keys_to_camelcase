@@ -19,7 +19,7 @@ You can infer the return as argument so the result will be typed
 
 <img src="./readme/result.png">
 
-### Inferer the `result` and `input`
+### Inference `result` and `input`
 
 <img src="./readme/inference.png">
 

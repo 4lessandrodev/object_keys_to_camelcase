@@ -1,5 +1,5 @@
 {
-	"name": "camelcase_converter",
+	"name": "keys-converter",
 	"version": "1.0.0",
 	"description": "This package provide a util function to convert snake case object keys to camel case",
 	"main": "dist/index.js",
