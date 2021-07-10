@@ -1,0 +1,35 @@
+{
+	"name": "camelcase_converter",
+	"version": "1.0.0",
+	"description": "This package provide a util function to convert snake case object keys to camel case",
+	"main": "dist/index.js",
+	"types": "dist/index.d.js",
+	"license": "ISC",
+	"author": "Alessandro Dev",
+	"keywords": [
+		"Props Converter",
+		"Key Converter",
+		"Util",
+		"Typescript"
+	],
+	"scripts": {
+		"build": "tsc",
+		"test": "jest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/4lessandrodev/neode-nestjs.git"
+	},
+	"bugs": {
+		"url": "https://github.com/4lessandrodev/neode-nestjs/issues"
+	},
+	"homepage": "https://github.com/4lessandrodev/neode-nestjs#readme",
+	"dependencies": {},
+	"devDependencies": {
+		"@types/jest": "^26.0.23",
+		"jest": "^27.0.4",
+		"ts-jest": "^27.0.3",
+		"ts-node": "^10.0.0",
+		"typescript": "^4.2.4"
+	}
+}
