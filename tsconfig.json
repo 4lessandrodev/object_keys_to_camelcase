@@ -3,7 +3,7 @@
         "module": "CommonJS",
         "declaration": true,
         "noImplicitAny": false,
-        "removeComments": true,
+        "removeComments": false,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
         "allowSyntheticDefaultImports": true,
@@ -14,6 +14,7 @@
         "sourceMap": false,
         "outDir": "./dist",
         "esModuleInterop": true,
+		"strict": true
     },
     "exclude": [
         "/**/*.spec.ts",

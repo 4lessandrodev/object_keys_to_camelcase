@@ -18,18 +18,18 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/4lessandrodev/neode-nestjs.git"
+		"url": "git+https://github.com/4lessandrodev/object_keys_to_camelcase.git"
 	},
 	"bugs": {
-		"url": "https://github.com/4lessandrodev/neode-nestjs/issues"
+		"url": "https://github.com/4lessandrodev/object_keys_to_camelcase/issues"
 	},
-	"homepage": "https://github.com/4lessandrodev/neode-nestjs#readme",
+	"homepage": "https://github.com/4lessandrodev/object_keys_to_camelcase#readme",
 	"dependencies": {},
 	"devDependencies": {
-		"@types/jest": "^26.0.23",
-		"jest": "^27.0.4",
+		"@types/jest": "^26.0.24",
+		"jest": "^27.0.6",
 		"ts-jest": "^27.0.3",
-		"ts-node": "^10.0.0",
-		"typescript": "^4.2.4"
+		"ts-node": "^10.1.0",
+		"typescript": "^4.3.5"
 	}
 }

@@ -3,7 +3,38 @@ interface IObject {
 	[key: string]: string | number;
 }
 
-const objctKeysToCamelCase = function <Result = {}, Input = {}> (obj: Input): Result {
+/**
+ * 
+ * @param obj `{ key: value }`
+ * @returns obj `{ key: value }`
+ * 
+ * 
+ * @argument Result type as Object interface to type the return
+ * @argument Input type as Object interface to validate arguments type
+ * @example
+ * objectKeysToCamelCase<Result, Input>({});
+ * 
+ * @example
+ * 
+ *	interface Result {
+ *		goodMorning: string
+ *		goodAfternoon: string
+ *	}
+ *
+ *	interface Input {
+ *		good_morning: string, 
+ *		good_afternoon: string
+ *	}
+ *
+ *	const result = objectKeysToCamelCase<Result, Input>(
+ *		{
+ *			good_morning: "Its a beautfull day", 
+ *			good_afternoon: "Nice afternoon"
+ *		}
+ *	);
+ *
+ */
+const objectKeysToCamelCase = function <Result = {}, Input = {}> (obj: Input): Result {
 
 	let index: number = 0;
 	let result: IObject = {};
@@ -50,5 +81,5 @@ const objctKeysToCamelCase = function <Result = {}, Input = {}> (obj: Input): Re
 	return result as unknown as Result;
 };
 
-export { objctKeysToCamelCase };
-export default objctKeysToCamelCase;
+export { objectKeysToCamelCase };
+export default objectKeysToCamelCase;
