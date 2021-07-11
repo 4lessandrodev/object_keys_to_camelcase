@@ -11,11 +11,15 @@
         "lib": [
             "es2019"
         ],
-        "sourceMap": false,
+        "sourceMap": true,
         "outDir": "./dist",
         "esModuleInterop": true,
-		"strict": true
+		"strict": true,
+		"sourceRoot": "src",
+		"moduleResolution": "node",
+		"resolveJsonModule": true
     },
+	"include": ["src/**/*"],
     "exclude": [
         "/**/*.spec.ts",
         "/*.spec.ts",
