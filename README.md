@@ -27,3 +27,14 @@ If you provide the input type, the function validate the arguments
 So if you provide result type the return will be typed
 
 <img src="./readme/inference-2.png">
+
+---
+
+## Warning
+
+> - The function does not remove first underscore for safely
+
+example
+If your object has an protected prop like `_id` It will keep it
+
+<img src="./readme/keep-first-underscore.png">
