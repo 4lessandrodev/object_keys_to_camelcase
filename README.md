@@ -14,8 +14,8 @@ A module to convert object keys to camelcase.
 import { objectKeysToCamelCase } from "keys-converter";
 ```
 
-The function `objectKeysToCamelCase` receives an object
-You can infer the return as argument so the result will be typed
+The function `objectKeysToCamelCase` receives an object.
+You can to infer the return type as argument so the result returned will have types
 
 <img src="./readme/result.png">
 
@@ -23,8 +23,8 @@ You can infer the return as argument so the result will be typed
 
 <img src="./readme/inference.png">
 
-If you provide the input type, the function validate the arguments
-So if you provide result type the return will be typed
+If you provide the input type the function will validate the arguments,
+So if you provide the result type the returned value will have "types"
 
 <img src="./readme/inference-2.png">
 
@@ -32,9 +32,9 @@ So if you provide result type the return will be typed
 
 ## Warning
 
-> - The function does not remove first underscore for safely
+> - Function does not remove the first underscore for security
 
 example
-If your object has an protected prop like `_id` It will keep it
+If your object has a protected prop like `_id` It will keep it
 
 <img src="./readme/keep-first-underscore.png">
