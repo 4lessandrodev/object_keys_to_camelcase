@@ -11,7 +11,7 @@ A module to convert object keys to camelcase.
 ### How to use it?
 
 ```ts
-import { objectKeysToCamelCase } from "keys-converter";
+import { objectKeysToCamelCaseV2 } from "keys-converter";
 ```
 
 The function `objectKeysToCamelCase` receives an object

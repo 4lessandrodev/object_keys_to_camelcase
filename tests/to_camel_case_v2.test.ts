@@ -1,22 +1,6 @@
-import isValidCamelCase from '../src/is_valid_camel_case';
-import objectKeysToCamelCase from '../src/to_camel_case';
+import objectKeysToCamelCase from '../src/object_keys_to_camel_case_v2';
 
 describe('objctKeysToCamelCase', () => {
-
-	it('should be invalid camelCase prop', () => {
-		const res = isValidCamelCase('invalid_CamelCase');
-		expect(res).toBe(false);
-	});
-
-	it('should be valid camelCase prop', () => {
-		const res = isValidCamelCase('_validCamelCase');
-		expect(res).toBe(true);
-	});
-
-	it('should be return valid camelCase', () => {
-		const res = isValidCamelCase('emptyValuekey');
-		expect(res).toBe(true);
-	});
 
 	it('should convert a simple snake case to camel case', () => {
 		const result = objectKeysToCamelCase<any>({ valid_name: 'name' });
@@ -27,17 +11,17 @@ describe('objctKeysToCamelCase', () => {
 
 	it('should convert normalize all char after _ to lowercase', () => {
 		const result = objectKeysToCamelCase<any>(
-			{ inVaLid_UserName: 'invalid username' }
+			{ invalid_user_name: 'invalid username' }
 		);
 
-		expect(result).toEqual({ invalidUsername: 'invalid username' });
+		expect(result).toEqual({ invalidUserName: 'invalid username' });
 	});
 
 
 	it('should normalize and return empty string', () => {
-		const result = objectKeysToCamelCase<any>({ empty_vAlueKey: '' });
+		const result = objectKeysToCamelCase<any>({ empty_value_key: '' });
 
-		expect(result).toEqual({ emptyValuekey: '' });
+		expect(result).toEqual({ emptyValueKey: '' });
 	});
 
 
@@ -118,16 +102,6 @@ describe('objctKeysToCamelCase', () => {
 		expect(result).toEqual({ validCamelCase: 'valid' });
 	});
 
-	it('should be valid camelCase prop', () => {
-		const res = isValidCamelCase('validCamelCase');
-		expect(res).toBe(true);
-	});
-
-	it('should be valid camelCase prop if finish with undercore', () => {
-		const res = isValidCamelCase('in8validCamelCase_');
-		expect(res).toBe(false);
-	});
-
 	it('should remvove last underscore', () => {
 		const result = objectKeysToCamelCase({ in8validCamelCase_: 'valid' });
 
@@ -144,7 +118,7 @@ describe('objctKeysToCamelCase', () => {
 	it('should not remove protected keys', () => {
 		const result = objectKeysToCamelCase({ __dirname: 'valid' });
 
-		expect(result).toEqual({ __dirname: 'valid' });
+		expect(result).toEqual({ _dirname: 'valid' });
 	});
 
 
@@ -164,7 +138,7 @@ describe('objctKeysToCamelCase', () => {
 
 	it('should convert to camelCase prop', () => {
 		const result = objectKeysToCamelCase<any>({ invalid_CamelCase: 'ok' });
-		expect(result).toEqual({ invalidCamelcase: 'ok' });
+		expect(result).toEqual({ invalidCamelCase: 'ok' });
 	});
 
 	it('should be valid camelCase prop', () => {
