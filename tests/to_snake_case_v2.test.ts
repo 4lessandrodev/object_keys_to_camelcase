@@ -53,7 +53,7 @@ describe('objctKeysToCamelCase', () => {
 			userAge: 31
 		};
 		interface inputs {
-			name: string,
+			name: string;
 			companyName: string;
 			userAge: number;
 		}
