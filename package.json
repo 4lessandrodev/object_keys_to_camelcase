@@ -1,6 +1,6 @@
 {
 	"name": "keys-converter",
-	"version": "3.0.0",
+	"version": "3.0.1",
 	"description": "This package provide a util function to convert snake case object keys to camel case",
 	"main": "dist/index.js",
 	"types": "dist/index.d.js",
@@ -10,7 +10,14 @@
 		"Props Converter",
 		"Key Converter",
 		"Util",
-		"Typescript"
+		"Typescript",
+		"CamelCase",
+		"SnakeCase",
+		"Variables",
+		"Properties",
+		"Object Keys",
+		"ToCamleCase",
+		"ToSnakeCase"
 	],
 	"scripts": {
 		"build": "rimraf ./dist && tsc",
