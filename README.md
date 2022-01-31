@@ -1,11 +1,14 @@
 # Snake Case to Camel Case
 
-A module to convert object keys to camelcase or snakecase.
+A lib to convert object keys to camel-case or snake-case.
 
 ```sh
 npm i keys-converter 
+
 # or 
+
 yarn add keys-converter
+
 ```
 
 Use on browser
@@ -24,7 +27,13 @@ Use on browser
 ```
 
 
-<img src="https://i.ibb.co/YNvDVsk/fn-import.png">
+## Imports 
+
+```ts
+
+import { objectKeysToSnakeCaseV2, objectKeysToCamelCaseV2 } from 'keys-converter';
+
+```
 
 ---
 
@@ -43,7 +52,9 @@ import { objectKeysToCamelCaseV2 } from 'keys-converter';
 const user = {
 	_id: "sf2309sdf0010",
 	company_name: "some name",
-	user_password: "some@pass123"
+	user_password: "some@pass123",
+	created_at: "2020-01-01",
+	updated_at: "2020-01-01"
 };
 
 const result = objectKeysToCamelCaseV2(user);
@@ -52,7 +63,9 @@ console.log(result);
 > `{
 	_id: "sf2309sdf0010",
 	companyName: "some name",
-	userPassword: "some@pass123"
+	userPassword: "some@pass123",
+	createdAt: "2020-01-01",
+	updatedAt: "2020-01-01"
   }`
 
 
@@ -62,12 +75,14 @@ console.log(result);
 
 ```ts
 
-import { objectKeysToSnakeCaseV2} from '../lib/index';
+import { objectKeysToSnakeCaseV2} from 'keys-converter';
 
 const user = {
 	_id: "sf2309sdf0010",
 	companyName: "some name",
-	userPassword: "some@pass123"
+	userPassword: "some@pass123",
+	createdAt: "2020-01-01",
+	updatedAt: "2020-01-01"
 };
 
 const result = objectKeysToSnakeCaseV2(user);
@@ -76,7 +91,9 @@ console.log(result);
 > `{
 	_id: "sf2309sdf0010",
 	company_name: "some name",
-	user_password: "some@pass123"
+	user_password: "some@pass123",
+	created_at: "2020-01-01",
+	updated_at: "2020-01-01"
 }`
 
 
@@ -92,14 +109,18 @@ You can to infer the return type as argument so the result returned will have ty
 const user = {
 	_id: "sf2309sdf0010",
 	companyName: "some name",
-	userPassword: "some@pass123"
+	userPassword: "some@pass123",
+	createdAt: "2020-01-01",
+	updatedAt: "2020-01-01"
 };
 
 /** Dynamic Type */
 interface ResultType {
 	_id: string;
 	company_name: string,
-	user_password: string
+	user_password: string,
+	created_at: "2020-01-01",
+	updated_at: "2020-01-01"
 }
 
 const result = objectKeysToSnakeCaseV2<ResultType>(user);
@@ -120,4 +141,3 @@ So if you provide the result type the returned value will have "types"
 example
 If your object has a protected prop like `_id` It will keep it
 
-<img src="https://i.ibb.co/chVbVw7/keep-id.png">
