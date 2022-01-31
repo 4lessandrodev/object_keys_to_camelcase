@@ -28,7 +28,7 @@ import transformSnakeCaseKey from './transform_snake_case_key';
  *
  *	const result = objectKeysToSnakeCaseV2<Result, Input>(
  *		{
- *			goodMorning: "Its a beautfull day", 
+ *			goodMorning: "Its a beautiful day", 
  *			goodAfternoon: "Nice afternoon"
  *		}
  *	);

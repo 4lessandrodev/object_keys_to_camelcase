@@ -11,13 +11,13 @@ yarn add keys-converter
 Use on browser
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/keys-converter@3.0.2/bundle/index.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/keys-converter@3.0.3/bundle/index.min.js"></script>
 ```
 
 ```html
 <script type="module">
 	
-	import { objectKeysToCamelCaseV2 } from 'https://cdn.skypack.dev/keys-converter';
+	import { objectKeysToCamelCaseV2, objectKeysToSnakeCaseV2 } from 'https://cdn.skypack.dev/keys-converter';
 
 </script>
 
@@ -30,7 +30,7 @@ Use on browser
 
 ### How to use it?
 
-`objectKeysToCamelCaseV2` and `objectKeysToSnakelCaseV2`
+`objectKeysToCamelCaseV2` and `objectKeysToSnakeCaseV2`
 
 ### Two available functions
 

@@ -1,6 +1,6 @@
 {
 	"name": "keys-converter",
-	"version": "3.0.2",
+	"version": "3.0.3",
 	"description": "This package provide a util function to convert snake case object keys to camel case",
 	"main": "dist/index.js",
 	"module": "bundle/index.min.js",
