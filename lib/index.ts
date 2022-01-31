@@ -23,6 +23,6 @@ export * from './get_ascii_code';
 export * from './is_char_lower_case';
 export * from './is_valid_camel_case';
 export * from './get_params';
-export * from './is_first_char_undercore';
+export * from './is_first_char_underscore';
 export * from './is_only_alpha_lower_and_underscore';
 export * from './is_all_upper_case';

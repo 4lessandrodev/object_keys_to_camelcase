@@ -1,4 +1,4 @@
-import isFirstCharUnderscore from '../lib/is_first_char_undercore';
+import isFirstCharUnderscore from '../lib/is_first_char_underscore';
 
 describe('isFirstCharUnderscore', () => {
 	it('not  ', () => {
