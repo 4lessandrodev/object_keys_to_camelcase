@@ -1,4 +1,4 @@
-import transformLastCharToLower from '../src/transform_last_char_to_lower';
+import transformLastCharToLower from '../lib/transform_last_char_to_lower';
 
 describe('transformLastCharToLower', () => {
 	it('should ', () => {

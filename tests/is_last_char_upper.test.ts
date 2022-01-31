@@ -1,4 +1,4 @@
-import isLastCharUpper from '../src/is_last_char_upper';
+import isLastCharUpper from '../lib/is_last_char_upper';
 
 describe('isLastCharUpper', () => {
 	it('should ', () => {

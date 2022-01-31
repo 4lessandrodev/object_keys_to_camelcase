@@ -1,6 +1,6 @@
 import isAllLower from './is_all_lower_case';
 import isAllUpper from './is_all_upper_case';
-import isCharUnderscore from './is_char_undercore';
+import isCharUnderscore from './is_char_underscore';
 import isCharUpperCase from './is_char_upper_case';
 
 const getCaseRange = (str: string): string => {

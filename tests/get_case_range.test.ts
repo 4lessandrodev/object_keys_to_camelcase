@@ -1,4 +1,4 @@
-import getCaseRange from '../src/get_case_range';
+import getCaseRange from '../lib/get_case_range';
 
 describe('getCaseRange', () => {
 	it('should ', () => {

@@ -1,4 +1,4 @@
-import getAsciiCodeForChar from '../src/get_ascii_code';
+import getAsciiCodeForChar from '../lib/get_ascii_code';
 
 describe('getAsciiCodeForChar', () => {
 	it('should ', () => {

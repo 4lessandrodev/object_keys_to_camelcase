@@ -1,4 +1,4 @@
-import isCharLowerCase from '../src/is_char_lower_case';
+import isCharLowerCase from '../lib/is_char_lower_case';
 
 describe('isCharLowerCase', () => {
 	it('lower', () => {

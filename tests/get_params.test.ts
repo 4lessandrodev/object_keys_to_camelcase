@@ -1,4 +1,4 @@
-import getParams from '../src/get_params';
+import getParams from '../lib/get_params';
 
 describe('getParams', () => {
 	it('should ', () => {

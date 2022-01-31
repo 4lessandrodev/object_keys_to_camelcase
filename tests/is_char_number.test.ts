@@ -1,4 +1,4 @@
-import { isCharNumber } from '../src/is_char_number';
+import { isCharNumber } from '../lib/is_char_number';
 
 describe('isCharNumber', () => {
 	it('should ', () => {

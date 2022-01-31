@@ -1,4 +1,4 @@
-import isCharUpperCase from '../src/is_char_upper_case';
+import isCharUpperCase from '../lib/is_char_upper_case';
 
 describe('isCharUpperCase', () => {
 	it('all upper', () => {

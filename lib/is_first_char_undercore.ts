@@ -1,4 +1,4 @@
-import isCharUnderscore from './is_char_undercore';
+import isCharUnderscore from './is_char_underscore';
 
 const isFirstCharUnderscore = (str: string): boolean => {
 	return isCharUnderscore(str[0]);

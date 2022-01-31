@@ -1,4 +1,4 @@
-import transformCamelCaseKey from '../src/transform_camel_case_key';
+import transformCamelCaseKey from '../lib/transform_camel_case_key';
 
 describe('transformCamelCaseKey', () => {
 	it('should ', () => {

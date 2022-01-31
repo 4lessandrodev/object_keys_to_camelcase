@@ -1,4 +1,4 @@
-import objectKeysToCamelCase from '../src/to_camel_case';
+import objectKeysToCamelCase from '../lib/to_camel_case';
 
 describe('objctKeysToCamelCase', () => {
 

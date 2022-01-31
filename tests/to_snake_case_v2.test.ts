@@ -1,4 +1,4 @@
-import objectKeysToSnakeCase from '../src/object_keys_to_snake_case_v2';
+import objectKeysToSnakeCase from '../lib/object_keys_to_snake_case_v2';
 
 describe('objctKeysToCamelCase', () => {
 

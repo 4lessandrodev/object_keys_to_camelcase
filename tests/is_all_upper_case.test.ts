@@ -1,4 +1,4 @@
-import isAllUpper from '../src/is_all_upper_case';
+import isAllUpper from '../lib/is_all_upper_case';
 
 describe('isAllUpper', () => {
 	it('all upper', () => {

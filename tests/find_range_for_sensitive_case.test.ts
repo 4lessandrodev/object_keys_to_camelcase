@@ -1,4 +1,4 @@
-import findRangesForSensitiveCase from '../src/find_range_for_sensitive_case';
+import findRangesForSensitiveCase from '../lib/find_range_for_sensitive_case';
 
 describe('findRangesForSensitiveCase', () => {
 	it('should valid range', () => {

@@ -1,7 +1,7 @@
-import isLastCharUnderscore from './is_last_char_undercore';
+import isLastCharUnderscore from './is_last_char_underscore';
 import removeIfLastCharIsUnderscore from './remove_last_char_if_underscore';
 
-const transformCamelCaseKey = (ranges: string[]): string => {
+const transformSnakeCaseKey = (ranges: string[]): string => {
 
 	let key: string = '';
 
@@ -9,7 +9,7 @@ const transformCamelCaseKey = (ranges: string[]): string => {
 
 		if (i !== 0) {
 			ranges[i] = ranges[i].replace(/_/g, '');
-			key += ranges[i][0].toUpperCase() + ranges[i].slice(1, ranges[i].length);
+			key += '_' + ranges[i];
 		} else {
 			if (isLastCharUnderscore(ranges[i])) {
 				key += removeIfLastCharIsUnderscore(ranges[i]);
@@ -22,5 +22,5 @@ const transformCamelCaseKey = (ranges: string[]): string => {
 	return key;
 };
 
-export { transformCamelCaseKey };
-export default transformCamelCaseKey;
+export { transformSnakeCaseKey };
+export default transformSnakeCaseKey;

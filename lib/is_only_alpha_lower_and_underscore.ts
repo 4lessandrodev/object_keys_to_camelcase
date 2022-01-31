@@ -1,5 +1,5 @@
 import isCharNumber from './is_char_number';
-import isCharUnderscore from './is_char_undercore';
+import isCharUnderscore from './is_char_underscore';
 import isCharUpperCase from './is_char_upper_case';
 
 const isOnlyAlphaLowerAndUnderscore = (str: string): boolean => {

@@ -1,4 +1,4 @@
-import isAllLower from '../src/is_all_lower_case';
+import isAllLower from '../lib/is_all_lower_case';
 
 describe('isAllUpper', () => {
 	it('all upper', () => {

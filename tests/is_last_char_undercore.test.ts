@@ -1,4 +1,4 @@
-import isLastCharUnderscore from '../src/is_last_char_undercore';
+import isLastCharUnderscore from '../lib/is_last_char_underscore';
 
 
 describe('isLastCharUnderscore', () => {

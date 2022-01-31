@@ -1,5 +1,5 @@
-import isOnlyAlphaUpperAndUnderscore from '../src/is_only_alpha_upper_and_underscore';
-import isOnlyAlphaLowerAndUnderscore from '../src/is_only_alpha_lower_and_underscore';
+import isOnlyAlphaUpperAndUnderscore from '../lib/is_only_alpha_upper_and_underscore';
+import isOnlyAlphaLowerAndUnderscore from '../lib/is_only_alpha_lower_and_underscore';
 
 describe('isOnlyAlphaAndUnderscore', () => {
 	it('should ', () => {

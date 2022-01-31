@@ -1,4 +1,4 @@
-import isValidCamelCase from '../src/is_valid_camel_case';
+import isValidCamelCase from '../lib/is_valid_camel_case';
 
 describe('objctKeysToCamelCase', () => {
 

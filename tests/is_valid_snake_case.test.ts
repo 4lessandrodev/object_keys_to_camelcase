@@ -1,4 +1,4 @@
-import isValidSnakeCase from '../src/is_valid_snake_case';
+import isValidSnakeCase from '../lib/is_valid_snake_case';
 
 describe('objctKeysToSnakeCase', () => {
 

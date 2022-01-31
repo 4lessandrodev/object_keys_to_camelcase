@@ -1,4 +1,4 @@
-import transformSnakeCaseKey from '../src/transform_snake_case_key';
+import transformSnakeCaseKey from '../lib/transform_snake_case_key';
 
 describe('transformSnakeCaseKey', () => {
 	it('should ', () => {

@@ -1,4 +1,4 @@
-import removeIfLastCharIsUnderscore from '../src/remove_last_char_if_underscore';
+import removeIfLastCharIsUnderscore from '../lib/remove_last_char_if_underscore';
 
 describe('removeIfLastCharIsUnderscore', () => {
 	it('should ', () => {

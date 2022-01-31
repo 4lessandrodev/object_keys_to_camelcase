@@ -1,4 +1,4 @@
-import isCharUnderscore from '../src/is_char_undercore';
+import isCharUnderscore from '../lib/is_char_underscore';
 
 describe('isCharUnderscore', () => {
 	it('underscore', () => {
